@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WeatherActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_weather">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".6"
+        android:id="@+id/linell"
+        android:background="@drawable/banner"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView style="@style/MyTextView"
+            android:id="@+id/wethertemp"
+            android:text="cel"
+            android:textSize="@dimen/textsize30" />
+        <TextView style="@style/MyTextView"
+            android:text="loc"
+            android:textSize="@dimen/textsize20"
+            android:id="@+id/locationtv" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/weather_forcast_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
+

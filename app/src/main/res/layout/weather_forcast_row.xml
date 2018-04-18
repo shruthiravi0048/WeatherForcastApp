@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="4"
+    android:layout_margin="@dimen/margin5"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/MyTextViewStyle"
+        android:id="@+id/daytext"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="today"/>
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_weight=".5"
+        android:id="@+id/conditionimg"
+        android:layout_height="wrap_content"
+        android:text="today"/>
+
+    <TextView style="@style/MyTextViewStyle"
+        android:id="@+id/conditiontext"
+        android:layout_height="wrap_content"
+        android:text="today"/>
+    <TextView
+        style="@style/MyTextViewStyle"
+        android:layout_height="wrap_content"
+        android:id="@+id/temptext"
+        android:text="today"/>
+
+</LinearLayout>
